@@ -90,23 +90,23 @@ La aplicación también expone endpoints REST para integración:
 ## 🔧 Estructura del Proyecto
 
 ```
-LiteAluraDesafio/
-├── src/main/java/com/aluraCursos/LiteAluraDesafio/
-│   ├── LiteAluraDesafioApplication.java    # Clase principal de Spring Boot
+LiterAlura-ChallengeONE-SpringBoot/
+├── src/main/java/com/aluracursos/LiterAlura-ChallengeONE-SpringBoot/
+│   ├── LiterAluraChallengeONESpringBootApplication.java    # Clase principal de Spring Boot
 │   ├── LibroController.java                # Controlador REST
-│   ├── model/                              # Modelos de datos
+│   ├── models/                              # Modelos de datos
 │   │   ├── Datos.java                      # Modelo principal de respuesta API
-│   │   ├── DatosAutor.java                 # Modelo de autor
-│   │   ├── DatosLibros.java                # Modelo de libro
-│   │   ├── LibroDTO.java                   # DTO para transferencia
+│   │   ├── DatosDeAutor.java                 # Modelo de autor
+│   │   ├── DatosDeLibros.java                # Modelo de libro
+│   │   ├── DTO_Libro.java                   # DTO para transferencia
 │   │   ├── Libros.java                     # Entidad JPA
-│   │   └── ListToStringConverter.java      # Convertidor personalizado
+│   │   └── ConverterListToString.java      # Convertidor personalizado
 │   ├── principal/                          # Lógica de consola
 │   │   └── Principal.java                  # Menú principal interactivo
 │   ├── repository/                         # Capa de acceso a datos
-│   │   └── LibroRepository.java            # Repositorio JPA
+│   │   └── LibrosRepository.java            # Repositorio JPA
 │   └── service/                            # Lógica de negocio
-│       ├── ConsumoApi.java                 # Cliente HTTP para API
+│       ├── ConsumoDeApi.java                 # Cliente HTTP para API
 │       ├── ConvierteDatos.java             # Conversión de JSON
 │       ├── IConvierteDatos.java            # Interfaz de conversión
 │       └── LibroService.java               # Servicio de libros
