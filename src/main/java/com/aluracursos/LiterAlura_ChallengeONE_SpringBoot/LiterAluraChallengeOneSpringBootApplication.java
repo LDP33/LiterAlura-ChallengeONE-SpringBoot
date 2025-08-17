@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-import java.security.Principal;
+import com.aluracursos.LiterAlura_ChallengeONE_SpringBoot.principal.Principal;
 
 @SpringBootApplication
 @EntityScan("com.aluracursos.LiterAlura_ChallengeONE_SpringBoot.models")

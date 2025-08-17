@@ -2,7 +2,7 @@ package com.aluracursos.LiterAlura_ChallengeONE_SpringBoot.models;
 
 import org.hibernate.annotations.Table;
 import org.springframework.data.annotation.Id;
-
+import jakarta.persistence.*;
 import java.util.List;
 import java.util.stream.Collectors;
 

@@ -21,9 +21,7 @@ public class ConvierteDatos implements IConvierteDatos{
     @Override
     public List<DatosDeLibros> obtenerLista(String json, Class<DatosDeLibros> datosLibrosClass) {
         try {
-            // IMPORTANTE: Asumiendo que el JSON que recibes es una lista de libros.
-            // Si el JSON tiene una estructura envuelta en un objeto (ej. { "results": [ ... ] }),
-            // deberías mapear primero a la clase Datos y luego obtener la lista "resultados".
+
             return objectMapper.readValue(
                     json,
                     objectMapper.getTypeFactory().constructCollectionType(List.class, datosLibrosClass)

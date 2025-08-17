@@ -7,5 +7,4 @@ import java.util.List;
 public interface IConvierteDatos {
     <T> T obtenerDatos(String json, Class<T> clase);
     List<DatosDeLibros> obtenerLista(String json, Class<DatosDeLibros> datosLibrosClass);
-
 }
