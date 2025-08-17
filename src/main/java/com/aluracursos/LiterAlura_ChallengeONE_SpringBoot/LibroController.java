@@ -1,5 +1,6 @@
 package com.aluracursos.LiterAlura_ChallengeONE_SpringBoot;
 
+import com.aluracursos.LiterAlura_ChallengeONE_SpringBoot.models.DatosDeLibros;
 import com.aluracursos.LiterAlura_ChallengeONE_SpringBoot.models.Libros;
 import com.aluracursos.LiterAlura_ChallengeONE_SpringBoot.services.LibroService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ public class LibroController {
     private LibroService libroService;
 
     @PostMapping("/guardar")
-    public ResponseEntity<Libros> guardarLibro(@RequestBody DatosLibros datosLibros) {
+    public ResponseEntity<Libros> guardarLibro(@RequestBody DatosDeLibros datosLibros) {
         Libros libroGuardado = libroService.guardarLibro(datosLibros);
         return ResponseEntity.status(HttpStatus.CREATED).body(libroGuardado);
     }

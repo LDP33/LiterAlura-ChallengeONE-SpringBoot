@@ -1,5 +1,6 @@
 package com.aluracursos.LiterAlura_ChallengeONE_SpringBoot.models;
-
+import jakarta.persistence.AttributeConverter;
+import jakarta.persistence.Converter;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
